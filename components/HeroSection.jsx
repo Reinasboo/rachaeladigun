@@ -115,19 +115,16 @@ export default function HeroSection() {
           className="flex justify-center mb-16"
           variants={itemVariants}
         >
-          <div className="relative w-64 h-80 rounded-2xl overflow-hidden shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 opacity-90"></div>
+          <div className="relative w-64 h-80 rounded-2xl overflow-hidden shadow-2xl group">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-100"></div>
             <Image
-              src="https://imgur.com/zytQnjf.jpg"
+              src="/headshot.jpg"
               alt="Rachael Oyinlola Adigun - Executive Assistant"
               fill
               className="object-cover"
               priority
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-              }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent group-hover:from-slate-900/10 transition-all duration-300"></div>
           </div>
         </motion.div>
 
